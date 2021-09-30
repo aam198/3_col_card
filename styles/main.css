@@ -145,10 +145,6 @@ button.btn{
   color: var(--bkg-clr);
 }
 
-.col:hover ~ .sedan{
-  fill:#fff;
-}
-
 
 
 /* 
