@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+:root{
+  --orange: hsl(31,77%, 52%); 
+  --dark-cyan: hsl(184, 100%, 22%);
+  --darker-cyan: hsl(179, 100%, 13%);
+
+  --bkg-clr: hsl(0, 0%, 95%); 
+  --content-clr: hsla(0, 0%, 100%, 0.75);
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --width: calc(100% /3);
+
+  --heading-font: 'Big Shoulders Display', cursive;
+  --body-font: 'Lexend Deca', sans-serif;
+}
+
+/* Global Styles */
+
+html{
+  font-size: 93.8%;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: var(--body-font);
+  background-color: var(--bkg-clr);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--heading-font);
+  font-weight: var(--fw-700);
+  color: var(--content-clr);
+  letter-spacing: 1px;
+  
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+p{
+  font-size: 1.0rem;
+  font-family: var(--body-font);
+  color: var(--content-clr);
+  font-weight: var(--fw-400);
+  line-height: 2.0;
+}
+
+.wrapper{
+  width: 65%;
+  height: 55vh;
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
+}
+
+.wrapper h1{
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.wrapper p{
+  margin-top: 1rem;
+  margin-right: 2rem;
+
+}
+
+
+.column-1, .column-2, .column-3{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem 3rem;
+  height: 55vh;
+  width: var(--width);
+  position:relative;
+}
+
+.column-1{
+  background-color: var(--orange);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.column-2{
+  background-color: var(--dark-cyan);
+}
+
+.column-3{
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: var(--darker-cyan);
+}
+
+
+
+button.btn{
+  border: 2px solid;
+  background-color: var(--bkg-clr);
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  padding: 16px;
+  cursor: pointer;
+  margin-top: 5rem;
+}
+
+.column-1 .btn{
+  color: var(--orange);
+}
+
+.column-2 .btn{
+  color: var(--dark-cyan);
+}
+
+.column-3 .btn{
+  color: var(--darker-cyan);
+}
+
+.btn:hover{
+  border-radius: 24px;
+  background-color: inherit;
+  border: 2px solid var(--bkg-clr);
+  color: var(--bkg-clr);
+}
+
+
+/* 
+@media only screen and (max-width: 375px){
+ .wrapper .column-1{
+    width: 100%;
+  }
+  .wrapper .column-2{
+    width: 100%;
+  }
+ .wrapper .column-3{
+    width: 100%;
+  }
+} */
+
