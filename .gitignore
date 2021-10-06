@@ -1,0 +1,11 @@
+
+
+
+#Visual Studio cache/options
+
+.vscode/
+*.vscode
+
+
+.DS_STORE/
+*.DS_STORE
